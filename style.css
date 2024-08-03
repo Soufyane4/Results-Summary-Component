@@ -1,0 +1,285 @@
+/*===============================
+SHARED CSS
+==================================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fc;
+}
+
+.component-0,
+.component-1,
+.component-2,
+.component-3 {
+  font-size: .7rem;
+}
+
+
+
+/*===============================
+CONTAINER STYLES
+==================================*/
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "top-alias"
+    "bottom-alias";
+}
+
+/*===============================
+TOP-SECTION STYLES
+==================================*/
+
+.top-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  grid-area: top-alias;
+  background-image: linear-gradient(
+    to bottom,
+    #7857ff,
+    #694cf9,
+    #5941f4,
+    #4736ee,
+    #2e2be9
+  );
+  width: 285px;
+  height: auto;
+  border-radius: 17px;
+  padding: 32px;
+  z-index: 1;
+}
+
+.top-section h5 {
+  opacity: 0.5;
+  margin-bottom: 20px;
+  font-size: 0.7rem;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-image: linear-gradient(
+    to bottom,
+    #4e21ca,
+    #4621ca,
+    #3d21ca,
+    #5941f4,
+    #5941f4
+  );
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.circle #score {
+  margin: 6px;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.circle #scale {
+  font-size: 0.6rem;
+  opacity: 0.5;
+}
+
+.top-section h4 {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.top-section h6 {
+  font-size: 0.7rem;
+  opacity: 0.6;
+  text-align: center;
+}
+/*===============================
+bottom-SECTION STYLES
+==================================*/
+
+.bottom-section {
+  grid-area: bottom-alias;
+  width: 285px;
+  height: auto;
+  padding: 20px;
+  background-color: #fff;
+  flex: 1;
+  margin-top: -10px;
+}
+
+.bottom-section h3 {
+  margin-bottom: 12px;
+  margin-left: 8px;
+  font-size: 0.8rem;
+  color: #303b5a;
+}
+
+.summary-components {
+  display: flex;
+  flex-direction: column;
+  width: 253px;
+}
+
+.summary-components div {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 5px;
+  height: 45px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.summary-components .component-0 {
+  color: #ff5757;
+  background-color: hsl(0, 100%, 97%);
+}
+
+.summary-components .component-1 {
+  color: #ffb01f;
+  background-color: hsl(39, 100%, 96%);
+}
+
+.summary-components .component-2 {
+  color: #00bd91;
+  background-color: hsl(222, 100%, 97%);
+}
+
+.summary-components .component-3 {
+  color: #1125d4;
+  background-color: hsl(241, 100%, 97%);
+}
+
+.summary-components .score {
+  margin-left: auto;
+  padding: 5px;
+  font-weight: 700;
+  color: #303b5a; 
+  font-size: .7rem;
+}
+
+span {
+  opacity: .6;
+  margin-left: 5px;
+}
+
+button {
+  background-color: #303b5a;
+  color: #fff;
+  width: 100%;
+  height: 50px;
+  margin: 16px 5px auto 5px;
+  border: none;
+  border-radius: 45px;
+  font-weight: 700;
+}
+
+button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(
+    to bottom,
+    #7857ff,
+    #694cf9,
+    #5941f4,
+    #4736ee,
+    #2e2be9
+  );
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 576px) {
+  .container {
+    display: flex;
+    box-shadow: 4px 12px 15px 6px rgb(235, 241, 255);
+    
+  }
+
+  .top-section {
+    z-index: 1;
+    width: 270px;
+    border-radius: 26px;
+  }
+
+  .top-section h5 {
+    opacity: 0.6;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+  }
+
+  .circle {
+    width: 136px;
+    height: 136px;
+  }
+
+  .circle #score {
+    margin: 3px;
+    font-size: 2.6rem;
+    font-weight: 800;
+  }
+
+  .circle #scale {
+    opacity: 0.6;
+  }
+
+  .top-section h6 {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  .bottom-section {
+    margin-left: -10px;
+    margin-top: 0;
+    border-radius: 0 26px 26px 0;
+  }
+
+  .top-section h4 {
+    margin-top: 9px;
+    font-size: 1.2rem;
+  }
+
+  .summary-components {
+    padding-left: 13px;
+  }
+
+  .bottom-section h3 {
+    font-size: .9;
+    font-weight: 800;
+    padding-left: 13px; 
+  }
+
+  button {
+    margin-left: 19px;
+    height: 45px;
+    width: 92%;
+  }
+
+}
