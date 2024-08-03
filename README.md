@@ -1,6 +1,6 @@
 # Frontend Mentor - Results summary component solution
 
-This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). 
+This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV).
 
 ## Table of contents
 
@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- This is the [solution URL](https://www.frontendmentor.io/solutions/results-summary-component-HTu6EtHwf0)
+- This is the [live site URL](https://soufyane4.github.io/Results-Summary-Component/)
 
 ## My process
 
@@ -45,4 +45,3 @@ Users should be able to:
 
 - Frontend Mentor - [@Soufyane4](https://www.frontendmentor.io/profile/Soufyane4)
 - Twitter - [@O_Soufyane](https://x.com/O_Soufyane)
-
